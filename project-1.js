@@ -10,7 +10,7 @@ function retranslateToDNA(dna) {
            rna += 'A';
        } else if (dna[i] === 'A') {
            rna += 'U';
-       }
+       } else return 'DNA must contain G, C, T, A';
    }
    return rna;
 }
@@ -27,10 +27,7 @@ function retranslateToRNA(rna) {
            dna += 'T';
        } else if (rna[i] === 'U') {
            dna += 'A';
-       } 
+       } else return 'RNA must contain C, G, A, U';
    }
    return dna;
 }
-
-let a = retranslateToDNA('au');
-console.log(a);
