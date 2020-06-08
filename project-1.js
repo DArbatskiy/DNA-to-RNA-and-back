@@ -20,6 +20,7 @@ function retranslateToDNA(dna) {
 
 function retranslateToRNA(rna) {
   let dna = '';
+  rna = rna.toString();
   rna = rna.toUpperCase();
   for (let i=0; i< rna.length; i++) {
       if (rna[i] === 'C') {
